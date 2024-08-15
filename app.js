@@ -2,14 +2,15 @@ var username = "username";
 var password = "password";
 
 function login() {
-    var errorElement = document.getElementById("username")
+    var errorElement = document.getElementById("error1");
     var input = document.getElementById("username").value;
     var input2 = document.getElementById("password").value;
     if (input != username || input2 != password) {
-        errorElement.textContent = ("Incorrect password or username");
-        errorElement.classList.remove("")
+        errorElement.textContent = "Incorrect password or username";
+        errorElement.style.color = "red";
     }
     else {
+        errorElement.textContent = "";
         window.location.href = "/account.html";
     }
 };

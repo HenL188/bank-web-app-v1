@@ -5,10 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Account</title>
+    <script src="app.js" defer></script>
 </head>
 
 <body>
-
+    <h1>Create new account</h1>
+    <section>
+        <form>
+            <label for="newusername">Username</label>
+            <input type="text" id="newusername" name="newusername"><br><br>
+            <label for="newpassword">Password</label>
+            <input type="password" id="newpassword" name="newpassword"><br><br>
+            <label for="renterpassword">Renter Password</label>
+            <input type="password" id="renterpassword" name="renterpassword"><br>
+            <span id="error"></span>
+        </form>
+        <button id="newlogin" onclick="newLogin();">Login</button>
+    </section>
+    <section>
+        <button onclick="location.href='/index.html';">Back</button>
+    </section>
 </body>
 
 </html>

@@ -45,7 +45,11 @@ function newLogin() {
             window.location.href = "/account.html";
         }
     }
-
-
 };
+
+function balance() {
+    var balance = "0.00";
+    var x = document.getElementById("balance");
+    x.innerHTML = balance;
+}
 

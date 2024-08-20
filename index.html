@@ -3,28 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank</title>
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Home</title>
 </head>
 
 <body>
-    <h1 class="login">Login</h1>
+    <header>
+        <nav aria-label="primary-nav">
+            <a href="/index.html"><img src="img/logo.png" alt="bank logo" width="50" height="50"></a>
+            <a href="/newaccount.html">New Account</a>
+            <button class="loginhome" onclick="location.href='/login.html';">Login</button>
+        </nav>
+        <h1>Bank</h1>
+    </header>
     <main>
-        <section>
-            <form class="login">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username"><br><br>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password"><br>
-                <span id="error1"></span><br>
-            </form>
-            <div class="loginbutton"> <button id="login" onclick="login();">Login</button> </div>
-        </section>
-        <section>
-            <div class="newaccount"><a href="/newaccount.html">New User</a></div>
-        </section>
+        <article>
+            <section>
+                <h2>Who are we?</h2>
+                <p>We are the bank of today.</p>
+                <ul>
+                    <li>
+                        High interest savings and checking accounts.
+                    </li>
+                    <li>
+                        Low interesst loans.
+                    </li>
+                </ul>
+
+            </section>
+        </article>
     </main>
 </body>
 

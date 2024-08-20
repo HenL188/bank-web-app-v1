@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
+    <script src="app.js" defer></script>
 </head>
 
-<body>
-    <h1>
-        Welcome
-    </h1>
+<body onload="balance()">
+    <header>
+        <h1>
+            Welcome
+        </h1>
+    </header>
     <main>
-        <section>
-
-        </section>
+        <article>
+            <section>
+                <p>Account: savings</p>
+                <p>Balance: <span id="balance"></span>
+                </p>
+            </section>
+        </article>
     </main>
 </body>
 
